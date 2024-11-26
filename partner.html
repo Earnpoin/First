@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Page title</title>
+     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: white;
+        
+        font-family: 'Poppins', Tahoma, sans-serif;
+      }
+      
+       header {
+      width:360px;
+      position:fixed;
+        font-size: 1.1rem;
+        padding-bottom: 0.5em;
+        color: #fafafa;
+        background-color: red;
+        outline: none;
+        height:90px;
+        
+       
+       background:url("https://i.ibb.co/NLVSWVf/screen.png");
+       background-size:360px;
+       background-repeat:no-repeat;
+        display: block;
+         z-index: 1;
+         
+        
+        overflow-x: hidden;
+      }
+      span {
+        display: block;
+        height: 3em;
+        cursor: pointer;
+        padding: 1em 1.2em;
+        outline: none;
+      }
+      #menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 6em;
+        transition: 0.3s;
+        max-width: 70%;
+        background-color: #152f52;
+        box-shadow: 0em 0em 0.7em;
+      }
+      ul {
+        
+        padding-left: 2em;
+      }
+      li > a {
+        color: #f4f3f2;
+        display: block;
+        margin-bottom: 1em;
+        padding: 0.5em;
+      }
+      li > a:hover:not(.closebtn),
+      li > a:focus:not(.closebtn) {
+        background-color: #f4f3f2;
+        color: #152f52;
+        width: 12em;
+        outline: none;
+      }
+      .closebtn {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 2em;
+        margin-left: 5em;
+      }
+      div.content > a {
+        display: block;
+        padding: 0.5em;
+        margin-left: 1em;
+        color: #f4f3f2;
+      }
+      div.content > a:hover,
+      div.content > a:focus {
+        background-color: #f4f3f2;
+        color: #152f52;
+        width: 10em;
+      }
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        margin-bottom: 15rem;
+        text-align: center;
+        color: #152f52;
+        font-size: 1.7em;
+        float:left;
+      }
+      div.content {
+        display: none;
+      }
+      .dropbtn {
+        margin-bottom: 0;
+      }
+      .dropdown:hover .content {
+        display: block;
+      }
+      nav {
+          width:150px;
+          height:150px;
+          position:fixed;
+      }
+      .burger{
+    width:25px;
+    height:4px;
+    border-radius:4px;
+    background: #152f52;
+    margin-bottom:4px;
+   
+}
+  #mydiv {
+  
+  
+ 
+                background-image:linear-gradient(to left, green, yellow, green, yellow, green, #ff3f15);
+ background-position: top right;
+             
+                   
+                   align-items:center;
+                   text-align:center;
+                  color:transparent;
+                  background-size:100px;
+                  -webkit-background-clip:text;
+  animation: mymove 5s infinite alternate;
+}
+ 
+b {
+    text-decoration:italic;
+}
+@keyframes mymove {
+  50% {background-position:center;}
+}
+.high1 {
+    
+                   align-items:center;
+                   text-align:center;
+                background-image:url("flower.png");
+                height:480px;
+                position:absolute;
+                width:330px;
+                color:white;
+                backgroutnd-repeat:no-repeat;
+background-size:400px;
+margin:15px;
+               
+                
+}
+svg {
+    width:20px;
+    height:20px; 
+        
+    margin-left:9px;
+}
+#button3 {
+    float:left;
+    margin-left:20px;
+    animation:shadow 1s linear infinite alternate;
+box-shadow:0px 0px 0px 5px #C5CAE9;
+border-radius:14px;
+width:160px;
+height:30px;
+color:#152f52;
+border:1px solid white;
+font-family: fantasy;
+background:#152f52;
+}
+@keyframes shadow{
+to{box-shadow:0px 0px 0px 11px #C5CAE9;
+}
+}
+svg {
+    width:20px;
+    height:20px; 
+        
+    margin-left:9px;
+}
+
+  </style>
+    
+</head>
+<body>
+      <header>
+      <nav><span onclick="openMenu()"><div class="burger"></div>
+                        <div class="burger"></div>
+                        <div class="burger"></div></span></nav>
+                        <img style="float:right;border-radius:50px;" src="https://i.ibb.co/dtQF8Sk/crystal.jpg" border="0" width="50px" height="50px"><br><br>
+      <div id="mydiv">
+                    <b> &nbsp;&nbsp;CRYSTAL GARDEN ESTATE</b>
+                 </div>                 
+                        
+    </header>
+
+    <div id="menu">
+      <ul style="list-style-type: none;">
+        <li>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()"
+            >&times;</a
+          >
+        </li>
+        <li><a href="www.crystal.blog" target="_blank">Home</a></li>
+         <li><a href="about.blog" target="_blank">About</a></li>
+         <li><a href="see1.blog" target="_blank">Testimonials</a></li>
+        <li>
+          <a href="see2.blog" target="_blank">Gallery</a>
+        </li>
+        
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Contacts</a>
+          <div class="content">
+            <a href="https://www.facebook.com/crystalgardenestate1?mibextid=ZbWKwL" target="_blank"
+              ><img src="https://i.ibb.co/pvJH8tK/facebook-icon-512x512-seb542ju.png" width="15px" height="15px">&nbsp;Facebook</a
+            >
+            <a href="https://www.instagram.com/crystalgardenestate_?igsh=djUxMHFvM2w3ejRw" target="_blank"
+              ><img src="https://i.ibb.co/6nkNPbQ/Instagram-icon.png" width="15px" height="15px" alt="">&nbsp;Instagram</a
+            >
+            <a href="https://wa.me/message/5ISXVHSFJIXKP1" target="_blank"><img src="https://i.ibb.co/d2whp6c/wh.png" width="15px" height="15px" alt="">&nbsp;WhatsApp</a>
+            <a href="https://x.com/Crystalgarden_?t=zVBzWq_AJ4cUFjxz5ptrtQ&s=08" target="_blank"><img src="https://i.ibb.co/YfVHnsg/xi.png" width="15px" height="15px" alt="">&nbsp;X</a>
+          </div>
+        </li>
+      </ul>
+      <center>
+    </div><br>
+     <center>
+    
+  <h2 style="color:#a17e36;margin-top:100px;">Crystal Garden Estate</h2>
+  <br>
+  <p style="font-family:monospace;">Please you must get our form to become one of our agent <br><br><br>
+ If you have more questions for the form, you must visit our Office </p>
+ <br><br>
+ <fieldset style="width:340px;border:1px solid green;font-weight:bold;height:250px;"><legend align="center">Location</legend><br>
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>&nbsp;NO 9 Awka Road Pacific Complex shop FF 16 1st Floor Onitsha<br>Anambra, Nigeria, 430231<br><br>Or<br><br>
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>&nbsp;24b Ade tokubo ikeja Lagos, Nigeria</fieldset>
+   </center><br><br><br>
+    <div style="height:350px; background:#152f52; color:white;">
+    <h2>Interested In Our Properties?<br><h4>Contact info</h4></h2>
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>&nbsp;+2348061297456</span>
+ <span><a href="https://www.facebook.com/crystalgardenestate1?mibextid=ZbWKwL" target="_blank"><img src="https://i.ibb.co/pvJH8tK/facebook-icon-512x512-seb542ju.png" width="50px" height="50px" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/crystalgardenestate_?igsh=djUxMHFvM2w3ejRw" target="_blank"><img src="https://i.ibb.co/6nkNPbQ/Instagram-icon.png" width="50px" height="50px" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://youtube.com/@CrystalGardenEstate?si=fOGJEeTIvFn7U-pj" target="_blank"><img src="https://i.ibb.co/f8pnJHk/1384060.png" width="50px" height="50px" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://wa.me/message/5ISXVHSFJIXKP1" target="_blank"><img src="https://i.ibb.co/d2whp6c/wh.png" width="50px" height="50px" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://x.com/Crystalgarden_?t=zVBzWq_AJ4cUFjxz5ptrtQ&s=08" target="_blank"><img src="https://i.ibb.co/YfVHnsg/xi.png" width="50px" height="50px" alt=""></a></span><br>
+ <br>
+ <button style="height:50px; border:1px solid white; width:100px;margin-left:8rem;" id="button3"><a href="teams.blog" style="font-weight:bold; font-family:monospace; color:white;" target="_blank" >TEAMS</a></button><br><br><br><br><br>
+ <button style="height:50px; border:1px solid white; width:200px;margin-left:5rem;" id="button3" onclick="finish()"><a href="" style="font-weight:bold; font-family:monospace; color:white;" target="_blank" >TERM AND CONDITIONS</a></button><br>
+<br><br><br>
+ <hr size="7" color="white"><br>
+ <h6 align="center"><a href="https://www.facebook.com/profile.php?id=100081504253500&mibextid=ZbWKwL" align="center" target="_blank">designed&nbsp;by<span style="background:#152f52;color:white;width:70px;height:40px;margin-left:145px;border-radius:20px;">Victor</span></a></h6>
+ <span style="margin-left:4rem;color:#152f52;">©️Copyright&nbsp;@&nbsp;2024&nbsp;MLMCS</span><br>
+</div>
+</body>
+<script> 
+      function finish() {
+    alert("Don't worry, Any land you buy from us is safe♻️");
+      }
+    function openMenu() {
+        document.getElementById("menu").style.width = "15rem";
+      }
+      function closeMenu() {
+        document.getElementById("menu").style.width = "0";
+       }
+       
+</script>
+</html>
